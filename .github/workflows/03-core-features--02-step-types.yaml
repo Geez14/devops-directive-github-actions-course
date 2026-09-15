@@ -22,3 +22,8 @@ jobs:
         # - uses: actions/hello-world-javascript-action@v1 # This would work, but it would be less stable and less secure:
         with:
           who-to-greet: "from an action in the GitHub Action marketplace! 👋"
+
+  run-local-action:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: ./.github/workflows/03-core-features--01-hello-world.yaml@df9ed8a6d207863878e6bb65ac9bb395e1f0f370
