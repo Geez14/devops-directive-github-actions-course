@@ -26,4 +26,7 @@ jobs:
   run-local-action:
     runs-on: ubuntu-24.04
     steps:
-      - uses: ./.github/workflows/03-core-features--01-hello-world.yaml@df9ed8a6d207863878e6bb65ac9bb395e1f0f370
+      - uses: actions/checkout@ff7abcd0c3c05ccf6adc123a8cd1fd4fb30fb493 # v5.0.0
+      - uses: ./06-authoring-actions/composite-action
+        with:
+          who-to-greet: "from a local action in this repository! 👋"
