@@ -26,4 +26,4 @@ jobs:
   run-local-action:
     runs-on: ubuntu-24.04
     steps:
-      - uses: ./.github/workflows/03-core-features--01-hello-world.yaml@df9ed8a6d207863878e6bb65ac9bb395e1f0f370
+      - uses: ./.github/workflows/03-core-features--01-hello-world.yaml
