@@ -1,0 +1,9 @@
+name: test-action
+on:
+  workflow_dispatch
+jobs:
+  runs-on: ubuntu-24.0
+  steps:
+  - name: ste1
+  run: echo "Hello world"
+  
